@@ -3,4 +3,59 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+
+$c-black: rgb(0, 0, 0);
+$c-content-background: rgb(227, 227, 227);
+$c-blue: rgb(91, 115, 227);
+$c-white: rgb(255, 255, 255);
+
 @import 'box-sizing';
+@import 'reset';
+
+.section {
+  padding: 10rem;
+  background: $c-black;
+}
+
+.container {
+  max-width: 65rem;
+  margin: auto;
+}
+
+.content-box {
+  background: $c-content-background;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+
+
+  &-box {
+    display: flex;
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  &-button {
+    padding: 0.5rem;
+    border: 0;
+    background: $c-blue;
+    color: $c-white;
+    font-size: 1.5rem;
+  }
+}
+
+.title {
+  padding: 2rem;
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+
+    &__rating {
+      margin-right: 1rem;
+    }
+  }
+}
