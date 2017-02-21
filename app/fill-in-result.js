@@ -9,12 +9,12 @@ export default function fillInResult(el, data) {
   titleRating.innerText = data.rating;
 
   const titleImg = document.querySelector('.title-img');
-  titleImg.innerText = data.img;
+  titleImg.src = data.poster;
 
   const titleSummary = document.querySelector('.title-summary__content');
   titleSummary.innerText = data.summary;
 
-  const titleCast = document.querySelector('.title-summary__content');
+  const titleCast = document.querySelector('.title-actors__content');
   titleCast.innerText = data.show_cast;
 
   return el;

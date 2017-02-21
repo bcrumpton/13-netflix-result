@@ -18,7 +18,7 @@ $c-white: rgb(255, 255, 255);
 }
 
 .container {
-  max-width: 65rem;
+  max-width: 40rem;
   margin: auto;
 }
 
@@ -28,6 +28,7 @@ $c-white: rgb(255, 255, 255);
 
 .search {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
 
 
@@ -48,14 +49,21 @@ $c-white: rgb(255, 255, 255);
 }
 
 .title {
+  display: flex;
+  flex-wrap: wrap;
   padding: 2rem;
 
   &-info {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 
     &__rating {
       margin-right: 1rem;
     }
+  }
+
+  &-img {
+    margin: 1rem;
   }
 }
