@@ -8,29 +8,25 @@ $c-black: rgb(0, 0, 0);
 $c-content-background: rgb(227, 227, 227);
 $c-blue: rgb(91, 115, 227);
 $c-white: rgb(255, 255, 255);
-
 @import 'box-sizing';
 @import 'reset';
 
-.section {
-  padding: 10rem;
+
+body {
   background: $c-black;
 }
 
 .container {
   max-width: 40rem;
   margin: auto;
-}
-
-.content-box {
-  background: $c-content-background;
+  padding: 5rem 0;
 }
 
 .search {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
-
+  justify-content: space-between;
+  width: 100%;
 
   &-box {
     display: flex;
@@ -51,19 +47,58 @@ $c-white: rgb(255, 255, 255);
 .title {
   display: flex;
   flex-wrap: wrap;
+  margin: 1rem;
   padding: 2rem;
 
   &-info {
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+
+    > * {
+      margin: 0;
+    }
 
     &__rating {
-      margin-right: 1rem;
+      display: flex;
+
+      h4 {
+        margin: 0 0.2rem 0 0;
+      }
+
+      i {
+        align-self: center;
+      }
     }
   }
 
+
+
   &-img {
-    margin: 1rem;
+    height: 10rem;
   }
+}
+
+// MIDDLE SECTION STYLING
+//
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background: $c-content-background;
+}
+
+.middle-left {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.bottom {
+  background: $c-content-background;
+  padding: 1rem;
 }

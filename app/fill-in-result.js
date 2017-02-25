@@ -6,7 +6,9 @@ export default function fillInResult(el, data) {
   titleGenre.innerText = data.category;
 
   const titleRating = document.querySelector('.title-info__rating');
-  titleRating.innerText = data.rating;
+  titleRating.innerHTML = `
+  <h4 class="title-info__rating--number">${data.rating}</h4>
+  <i class="fa fa-star" aria-hidden="true"></i>`;
 
   const titleImg = document.querySelector('.title-img');
   titleImg.src = data.poster;
