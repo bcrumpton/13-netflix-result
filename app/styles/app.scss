@@ -3,4 +3,102 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+
+$c-black: rgb(0, 0, 0);
+$c-content-background: rgb(227, 227, 227);
+$c-blue: rgb(91, 115, 227);
+$c-white: rgb(255, 255, 255);
 @import 'box-sizing';
+@import 'reset';
+
+
+body {
+  background: $c-black;
+}
+
+.container {
+  max-width: 40rem;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+.search {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+
+  &-box {
+    display: flex;
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  &-button {
+    padding: 0.5rem;
+    border: 0;
+    background: $c-blue;
+    color: $c-white;
+    font-size: 1.5rem;
+  }
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 2rem;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > * {
+      margin: 0;
+    }
+
+    &__rating {
+      display: flex;
+
+      h4 {
+        margin: 0 0.2rem 0 0;
+      }
+
+      i {
+        align-self: center;
+      }
+    }
+  }
+
+
+
+  &-img {
+    height: 10rem;
+  }
+}
+
+// MIDDLE SECTION STYLING
+//
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background: $c-content-background;
+}
+
+.middle-left {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.bottom {
+  background: $c-content-background;
+  padding: 1rem;
+}
